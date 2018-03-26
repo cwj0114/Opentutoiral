@@ -42,8 +42,10 @@
 			</div>
 			<br/>
 			<div>
-				<input type="button" id="registBtn" value="회원가입" />
-				<input type="button" id="findBtn" value="계정찾기" />
+				<a href="<c:url value="/regist"/>">
+					<input type="button" id="registBtn" value="회원가입" /><!--
+			--></a>
+			 	<input type="button" id="findBtn" value="계정찾기" />
 			</div>
 		</form:form>
 	</div>
