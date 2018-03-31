@@ -2,10 +2,17 @@ package com.opentutorial.community.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.opentutorial.community.service.CommunityService;
 
 @Controller
 public class CommunityController {
+	
+	private CommunityService communityService;
+	
+	public void setCommunityService(CommunityService communityService) {
+		this.communityService = communityService;
+	}
 	
 	@RequestMapping("/")
 	public String viewRegistPage() {
